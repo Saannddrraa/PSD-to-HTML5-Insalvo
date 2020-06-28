@@ -1,0 +1,47 @@
+.story {
+    padding: 100px 0;
+    background-color: $color-gray-light-2;
+}
+
+.story__img-box {
+    position: absolute;
+    z-index: 10;
+
+    @include responsive(medium) {
+        left: 0;
+        right: 0;
+        margin: -12px;
+        padding: 50px;
+        text-align: center;
+    }
+
+    @include responsive(small) {
+        position: static;
+        margin: -12px;
+        padding: 50px;
+        text-align: center;
+    }
+}
+
+.story__img {
+    position: absolute;
+    left: 10%;
+}
+
+.story__frame {
+    position: relative;
+    left: 7%;
+    border: 5px solid $color-yellow-dark;
+    width: 443px;
+    height: 490px;
+}
+
+.story__heading {
+    @include responsive(medium) {
+        margin-top: 50px;
+
+        &::after {
+            width: 40px;
+        }
+    }
+}

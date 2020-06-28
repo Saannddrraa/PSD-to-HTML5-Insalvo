@@ -1,0 +1,42 @@
+.banner__text {
+    position: absolute;
+    bottom: 5%;
+    font-size: 18px;
+
+    @include responsive(small) {
+        display: none;
+    }
+}
+
+.slider {
+    position: relative;
+}
+
+.slick-track {
+    width: 500px;
+}
+
+/* Dots */
+.slick-dotted.slick-slider {
+    height: 100%
+}
+
+.slick-dots {
+    bottom: 10%;
+}
+
+.slick-dots li button {
+    border: 1px solid $color-black;
+    width: 5px;
+    height: 5px;
+    border-radius: 10px;
+    transition: $transition;
+
+    &:hover {
+        background-color: $color-black;
+    }
+}
+
+.slick-dots li button:before {
+    content: "";
+}

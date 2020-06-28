@@ -1,0 +1,80 @@
+.heading-testimonials {
+    padding-top: 10px;
+}
+
+.testimonials {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+    background-color: $bg-color-dark;
+    color: $color-white;
+}
+
+.testimonials .slider {
+    max-width: 1000px;
+    margin: 0 auto;
+
+    @include responsive (small) {
+        max-width: 600px;
+    }
+}
+
+.testimonials__heading {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $color-white;
+
+    @include responsive (medium) {
+        margin-top: 40px;
+        margin-bottom: 60px;
+        font-size: 20px;
+    }
+}
+
+.testimonials .container {
+    border: 2px solid $color-yellow-light-2;
+    text-align: center;
+    padding: 50px;
+}
+
+.testimonials__text {
+    position: absolute;
+}
+
+.testimonials__paragraph {
+    font-size: 16px;
+    padding: 0 50px;
+
+    &:before {
+        position: relative;
+        content: url(../../img/commas.png);
+        left: -0.2rem;
+    }
+
+    &:after {
+        position: relative;
+        content: url(../../img/commas.png);
+        left: 0.2rem;
+    }
+
+    @include responsive (medium) {
+        font-size: 14px;
+        padding: 0 180px;
+    }
+
+    @include responsive (small) {
+        padding: 0 150px;
+    }
+}
+
+.testimonials .slider .slick-dots li button {
+    border: 1px solid $color-white;
+}
+
+.testimonials .slider .slick-dots li button:hover {
+    background-color: $color-yellow-light-2;
+}
+
+.testimonials .slider .slick-dots {
+    bottom: -10%;
+}

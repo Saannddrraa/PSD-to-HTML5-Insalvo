@@ -1,0 +1,35 @@
+@mixin textCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin heading-styles {
+    text-transform: uppercase;
+    font-family: Lato;
+}
+
+
+
+
+@mixin responsive($breakpoint) {
+    @if $breakpoint=='small' {
+        @media only screen and (max-width: 768px) {
+            @content;
+        }
+    }
+
+    @if $breakpoint=='medium' {
+        @media only screen and (max-width: 992px) {
+            @content;
+        }
+
+    }
+
+    @if $breakpoint=='big' {
+        @media only screen and (max-width: 1200px) {
+            @content;
+        }
+    }
+}

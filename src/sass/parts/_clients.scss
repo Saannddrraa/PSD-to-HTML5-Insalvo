@@ -1,0 +1,34 @@
+.clients {
+    padding-top: 95px;
+    padding-bottom: 183px;
+
+    @include responsive(medium) {
+        padding-top: 60px;
+        padding-bottom: 73px;
+        text-align: center;
+    }
+}
+
+.clients__paragraph {
+    padding-top: 17px;
+    padding-bottom: 134px;
+
+    @include responsive(medium) {
+        padding-top: 10px;
+        padding-bottom: 54px;
+    }
+}
+
+.clients__row {
+    padding-bottom: 123px;
+
+    @include responsive(medium) {
+        padding-bottom: 33px;
+    }
+}
+
+.client {
+    @include responsive(medium) {
+        padding-bottom: 40px;
+    }
+}

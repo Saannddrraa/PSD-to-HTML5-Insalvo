@@ -1,0 +1,162 @@
+.footer {
+    position: relative;
+    z-index: 15;
+    background-color: $bg-color-dark;
+    font-family: $popp-light;
+    padding-top: 157px;
+    color: $color-gray-light-1;
+}
+
+.footer__container {
+    padding: 20px;
+}
+
+.footer__logo {
+    width: 150px;
+    height: 50px;
+}
+
+.footer__logo-box {
+    margin-bottom: 25px;
+}
+
+.footer__paragraph {
+    margin-bottom: 35px;
+}
+
+.footer__list {
+    list-style: none;
+
+    @include responsive(medium) {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+.footer__link {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    color: $color-white;
+    border: 2px solid $color-yellow-dark-1;
+    border-radius: 60px;
+}
+
+.footer__link:hover {
+    color: $color-yellow-dark-1;
+    text-decoration: none;
+}
+
+.footer__item {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer__item-one:first-child {
+    font-size: 18px;
+    color: $color-white;
+    font-family: $popp-reg;
+    list-style: none;
+}
+
+.footer__list-one {
+    line-height: 36px;
+    list-style: "\00BB";
+    color: #fff;
+}
+
+.footer__link-one {
+    margin-left: 22px;
+    color: $color-white;
+}
+
+.footer__link-one:hover {
+    color: $color-yellow-dark-1;
+    text-decoration: none;
+}
+
+.footer__list-two {
+    line-height: 36px;
+    list-style: none;
+
+}
+
+.footer__item-two:first-child {
+    @extend .footer__item-one:first-child;
+}
+
+.footer__link-two {
+    margin-right: 22px;
+    color: $color-white;
+}
+
+.footer__link-two:hover {
+    @extend .footer__link-one:hover;
+}
+
+.copyright {
+    color: $color-white;
+    background-color: $bg-color-copyright;
+}
+
+.copyright__paragraph {
+    text-align: center;
+    padding-top: 27px;
+    padding-bottom: 18px;
+}
+
+.contact-us-box {
+    position: absolute;
+    top: -60px;
+    left: 0;
+    right: 0;
+    background-color: #af943e;
+    z-index: 20;
+    background-color: $color-yellow-dark;
+    color: $color-white;
+    padding: 50px 93px;
+    font-size: 18px;
+
+    @include responsive(medium) {
+        padding: 33px 80px;
+    }
+
+    @include responsive(small) {
+        font-size: 12px;
+    }
+}
+
+.button-white {
+    width: 152px;
+    height: 50px;
+    text-transform: uppercase;
+    padding: 16px 33px;
+    color: #fff;
+    font-size: 14px;
+    transition: all .2s;
+    background-color: $color-white;
+    color: $color-yellow-dark-2;
+    text-align: right;
+
+    &:hover {
+        background-color: transparent;
+        border: 2px solid $color-white;
+        color: $color-white;
+        text-decoration: none;
+    }
+
+    @include responsive(medium) {
+        padding: 10px 23px;
+    }
+
+    @include responsive(small) {
+        padding: 10px 27px;
+        font-size: 10px;
+    }
+}
+
+.contact__submit:hover {
+    background-color: $color-gray-light-3;
+}

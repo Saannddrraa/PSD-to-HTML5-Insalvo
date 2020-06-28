@@ -1,0 +1,51 @@
+.top-area {
+    background-color: $bg-color-top;
+    color: $color-white;
+    padding: 10px;
+    font-size: 12px;
+
+    @include responsive(small) {
+        text-align: center;
+    }
+}
+
+.social-area {
+    text-align: right;
+}
+
+.social-area__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    @include responsive(small) {
+        text-align: center;
+    }
+}
+
+.social-area__item {
+    display: inline-block;
+}
+
+.social-area__link {
+    padding: 5px 10px;
+    transition: $transition;
+    color: $color-white;
+}
+
+.social-area__link:hover {
+    color: $color-yellow-light-2;
+}
+
+.contact-area__link {
+    margin-right: 18px;
+}
+
+.contact-area__link {
+    color: $color-white;
+    transition: $transition;
+}
+
+.contact-area__link:hover {
+    color: $color-yellow-light-2;
+}
