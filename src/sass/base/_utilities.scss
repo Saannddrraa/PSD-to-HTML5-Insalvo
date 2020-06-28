@@ -1,0 +1,38 @@
+.horizontal-line {
+    &::after {
+        content: "";
+        display: block;
+        height: 2px;
+        background-color: $color-yellow-light-1;
+        width: 52px;
+        margin-top: 35px;
+    }
+
+    @include responsive(medium) {
+        margin-top: 25px;
+    }
+}
+
+.horizontal-line-center {
+    &::after {
+        @extend .horizontal-line;
+        margin: 20px auto;
+        width: 40px;
+
+        @media(max-width:768px) {
+            margin: 10px auto;
+
+        }
+    }
+}
+
+.horizontal-line-footer {
+    &::after {
+        display: block;
+        height: 2px;
+        background-color: $color-yellow-light-1;
+        content: "";
+        width: 52px;
+        margin: 25px 0;
+    }
+}
